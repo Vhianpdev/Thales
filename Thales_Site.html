@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thales Araújo | Consultoria de Elite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff5e00; /* Laranja Fitness */
+            --dark: #0d0d0d;
+            --grey: #1a1a1a;
+            --text: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .hero span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        /* Button */
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(255, 94, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(255, 94, 0, 0.4);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--grey);
+            padding: 40px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        /* Footer / Urgency */
+        .urgency {
+            background-color: var(--grey);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>SEU CORPO NÃO É UM EXPERIMENTO. <span>TREINE COM ELITE.</span></h1>
+        <p>Consultoria personalizada com Thales Araújo. Resultados reais através de biomecânica e periodização séria.</p>
+        <a href="https://wa.me/5500000000000?text=Olá Thales! Quero saber mais sobre a consultoria." class="cta-button">Quero meu treino agora</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Treino Individualizado</h3>
+            <p>Nada de fichas prontas. Cada exercício é escolhido de acordo com sua estrutura e objetivo atual.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Correção Técnica</h3>
+            <p>Suporte via vídeo para análise de execução. Treine pesado, mas treine certo para evitar lesões.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Acesso Direto</h3>
+            <p>Dúvidas sobre carga ou rotina? Fale diretamente com o Thales pelo WhatsApp sem intermediários.</p>
+        </div>
+    </section>
+
+    <section class="urgency">
+        <h2>VAGAS LIMITADAS PARA MAIO</h2>
+        <p style="margin-bottom: 30px; color: #aaa;">Foco total em quem quer resultado de verdade.</p>
+        <a href="https://wa.me/5500000000000" class="cta-button" style="font-size: 0.9rem;">Garantir minha vaga</a>
+    </section>
+
+</body>
+</html>
